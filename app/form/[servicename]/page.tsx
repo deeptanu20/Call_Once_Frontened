@@ -20,7 +20,9 @@ const BookService: React.FC = () => {
 
   useEffect(() => {
     if (servicename) {
-      setService(decodeURIComponent(servicename)); 
+      const service =
+        Array.isArray(servicename) ? servicename[0] : servicename;
+      setService(decodeURIComponent(service));
     }
   }, [servicename]);
 
@@ -37,39 +39,7 @@ const BookService: React.FC = () => {
 
 
   return (
-    // <div className="m-5">
-    //   <h1 className="text-2xl mb-4">Book {service}</h1>
-    //   <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      
-    //     <label className="block">
-    //       <span className="text-gray-700">Service Name</span>
-    //       <input
-    //         type="text"
-    //         value={service}
-    //         readOnly
-    //         className="mt-1 block w-full px-3 py-2 bg-gray-100 rounded-md"
-    //       />
-    //     </label>
-        
-    //     <label className="block">
-    //       <span className="text-gray-700">Select Timing</span>
-    //       <input
-    //         type="text"
-    //         value={timing}
-    //         onChange={(e) => setTiming(e.target.value)}
-    //         placeholder="Enter timing"
-    //         required
-    //         className="mt-1 block w-full px-3 py-2 border rounded-md"
-    //       />
-    //     </label>
-    //     <button
-    //       type="submit"
-    //       className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
-    //     >
-    //       Submit
-    //     </button>
-    //   </form>
-    // </div>
+
 
 
     <Card className="w-full max-w-2xl mx-auto">
