@@ -5,7 +5,7 @@ export const businessList = [
       category: {
         name: 'Home Services',
       },
-      contactPerson: 'Gita',
+      contactPerson: 'Raktim',
       address: 'Agartala',
       images: [{ url: '/images/washing.jpg' }],
     },
@@ -15,17 +15,17 @@ export const businessList = [
       category: {
         name: 'Logistics',
       },
-      contactPerson: 'Ankit',
+      contactPerson: 'Raj',
       address: 'Ranirbazar',
       images: [{ url: '/images/img6.jpg' }],
     },
     {
       id: 3,
-      name: 'Electricity Survice',
+      name: 'Electricity Service',
       category: {
         name: 'Electrical Support',
       },
-      contactPerson: 'Sneha',
+      contactPerson: 'Aniket',
       address: 'Ramnagar',
       images: [{ url: '/images/elec.jpg' }],
     },
@@ -35,8 +35,8 @@ export const businessList = [
       category: {
         name: 'Plumber',
       },
-      contactPerson: 'Vikram',
-      address: 'Motorstand',
+      contactPerson: 'Joy',
+      address: 'Usha Bazar',
       images: [{ url: '/images/plum.jpg' }],
     },
     {
@@ -88,7 +88,7 @@ export const businessList = [
         name: 'Barber',
       },
       contactPerson: 'Karan',
-      address: 'Radhanagar',
+      address: 'Teliamura',
       images: [{ url: '/images/women-ha.jpg' }],
     },
     {

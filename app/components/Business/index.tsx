@@ -14,7 +14,7 @@ function Book() {
         {businessList.length > 0 ? (
         businessList.map((business, index) => (
             <Link
-              href={'/payment/'}
+              href={'/form/'+business.name}
               key={index}
               className="shadow-md rounded-lg hover:shadow-lg cursor-pointer  hover:scale-105 transition-all ease-in-out"
             >
